@@ -1,0 +1,864 @@
+{
+  "intents":[
+      {
+          "intent" : "tanışma",
+          "input": [
+              "selam",
+              "nasılsın?",
+              "orada mısın?",
+              "merhaba",
+              "iyi günler",
+              "naber?",
+              "ne var ne yok?",
+              "hey",
+              "alo",
+              "selamın aleyküm",
+              "günaydın",
+              "iyi akşamlar",
+              "iyi geceler",
+              "halo",
+              "hello",
+              "tunaydin",
+              "ne var ne yok",
+              "iyi akşamlar",
+              "iyi misin?"
+          ],
+          "output" : [
+              "Merhaba, sana nasıl yardımcı olabilirim?",
+              "Selam, bugün senin için ne yapabilirim?"
+          ]
+      },
+      {
+          "intent": "geliştiriciler",
+          "input": [
+              "geliştiricilerinadı nedir",
+              "yaratıcıların adı nedir",
+              "yaratıcıların adı nedir",
+              "seni kim yarattı",
+              "geliştiricilerin",
+              "yaratıcıların",
+              "geliştiricileriniz kimlerdir",
+              "geliştiriciler",
+              "seni kim geliştirdi",
+              "seni kim yaptı",
+              "seni kim yarattı",
+              "seni kim tasarladı",
+              "seni kim yapmış",
+              "seni kim tasarladı",
+              "bu botu kim programladı?",
+              "bu botu kim yazdı",
+              "bu sistemi kim geliştirdi?",
+              "yapay zekânın arkasındaki ekip kimler?",
+              "bu chatbot'u kim kurdu?",
+              "bu servisin arkasında kimler var?"
+        ],
+          "output": [
+              "Okulumuzun 4. sınıf yazılım mühendisliği öğrencileri olan: Halil İbrahim ARSU, Hasan BESİREK ve Oğuz KOÇ"
+          ]
+      },
+      {
+          "intent": "isim",
+          "input": [
+              "isim",
+              "ismin ne",
+              "kimsin",
+              "ad",
+              "senin adın",
+              "bir adın var mı",
+              "nasıl çağrılıyorsun",
+              "seni ne diye çağırmalıyım",
+              "sen kimsin",
+              "bu kim",
+              "neyle sohbet ediyorum",
+              "kimle konuşuyorum",
+              "sana nasıl hitap etmeliyim?",
+              "sen kimsin?",
+              "adın nedir?",
+              "sana nasıl seslenmeliyim?",
+              "sana nasıl hitap edebilirim?"
+          ],
+          "output": [
+              "Beni Dijital Asistan olarak çağırabilirsin.",
+              "Ben Dijital Asistanım.",
+              "Ben bir sohbet botuyum.",
+              "Ben senin yardımcınım.",
+              "Dijital Asisitan diyebilirsin."
+          ]
+      },
+      {
+          "intent": "görev",
+          "input": [
+              "görevin ne?",
+              "ne yapabilirsiniz?",
+              "neler yapabilirsiniz?",
+              "yapabileceğiniz şeyler",
+              "bana ne yapabilirsiniz?",
+              "nasıl yardımcı olabilirsiniz?",
+              "neden sizi kullanmalıyım?",
+              "seni nasıl kullabilirim",
+              "ne işe yarıyorsun"
+          ],
+          "output": [
+              "Üniversite ile ilgili düşük-orta düzey soruları cevaplayabilirim.",
+              "Üniversite ile ilgili sorularınızı detay belirterek bana sorarsanız cevap vermeye çalışacağım."
+          ]
+      },
+      {
+        "intent": "saatler",
+        "input": [
+              "saatler",
+              "üniversite saatleri",
+              "çalışma günleri",
+              "ne zaman açıksınız",
+              "çalışma saatleri",
+              "üniversite ne zaman açık",
+              "üniversite saatleri",
+              "üniversite cumartesi günü açık mı",
+              "üniversite pazar günü açık mı",
+              "üniversite hafta sonu açık mı",
+              "üniversite saatleri hakkında",
+              "üniversiteye ne zaman gelmeliyim",
+              "üniversiteye ne zaman katılmalıyım",
+              "kampüs ne zaman kapanıyor?",
+              "hafta sonu açık mısınız?",
+              "çalışma zamanlarınız nelerdir?"
+      ],
+        "output": [
+              "Okulumuz 08.00-17.30 arası açık. Ayrıca haftasonları da hizmet veriyoruz.",
+              "08.00-17.30 her gün",
+              "Haftanın her günü 08.00-17.30",
+              "08.00-17.30 her gün açık"
+        ]
+      },
+      {
+        "intent": "iletişim",
+        "input": [
+              "iletisim",
+              "daha fazla bilgi",
+              "daha fazla bilgi nasil edinirim",
+              "iletişim bilgisi",
+              "üniversiteyle nasıl iletişime geçilir",
+              "üniversitenin telefon numarası",
+              "üniversite numarası",
+              "iletişim numaranız nedir",
+              "sizi nasıl arayabilirim",
+              "telefon numaranızı alabilir miyim",
+              "sizi nasıl arayabilirim",
+              "telefon numarası",
+              "ara",
+              "okulun ana iletişim adresleri nelerdir?",
+              "okul idaresiyle nasıl irtibat kurabilirim?",
+              "danışma hattınız var mı?",
+              "müdürle nasıl görüşebilirim?",
+              "okulun mail adresi",
+              "okulun mail adresi nedir",
+              "mail",
+              "okulun gmail adresi",
+              "okulun gmail adresi nedir",
+              "gmail",
+              "okulun outlook adresi",
+              "okulun outlook adresi nedir",
+              "outlook",
+              "okulun hotmail adresi",
+              "okulun hotmail adresi nedir",
+              "hotmail"
+      ],
+        "output": [
+              "Şu numaralardan ya da mail adresinden iletişime geçebilirsiniz:\n0850 283 60 00\n+90 212 481 36 88\nsks@istinye.edu.tr"
+     ]   
+      },
+      {
+          "intent": "ders",
+          "input": [
+              "ders",
+              "derslerin listesi",
+              "sunulan derslerin listesi",
+              "üniversitenizde sunulan derslerin listesi",
+              "üniversitenizde sunulan dersler nelerdir?",
+              "dersler?",
+              "üni",
+              "sunulan dersler",
+              "üniversitenizde sunulan derslerin listesi",
+              "sunduğunuz dersler",
+              "bölümler?",
+              "üniversitenizde mevcut dersler?",
+              "üniversitenizde mevcut bölümler?",
+              "üniversitedeki dersler nelerdir?",
+              "üniversitedeki bölümler nelerdir?",
+              "üniversitedeki dersler nelerdir?",
+              "üniversitedeki bölümler nelerdir?",
+              "bana üniversitedeki mevcut dersleri söyleyebilir misiniz?",
+              "bana ünideki mevcut bölümleri söyleyebilir misiniz?",
+              "bilgisayar mühendisliği dersleri",
+              "bilgi teknolojileri dersleri",
+              "mekanik mühendisliği dersleri",
+              "kimya mühendisliği dersleri",
+              "inşaat mühendisliği dersleri",
+              "hangi alanlarda dersler sunuyorsunuz?",
+              "bu dönem hangi dersler var?",
+              "programınızda hangi yeni dersler var?",
+              "yaz okulunda hangi dersleri alabilirim?"
+        ],
+          "output": [
+              "Üniversitemizde Tıp Fakültesi , Diş Hekimliği Fakültesi , Güzel Sanatlar, Tasarım ve Mimarlık Fakültesi , İletişim Fakültesi, Mühendislik ve Doğa Bilimleri Fakültesi , Sağlık Hizmetleri Meslek Yüksekokulu , Eczacılık Fakültesi , İktisadi, İdari ve Sosyal Bilimler Fakültesi , Sağlık Bilimleri Fakültesi , İnsan ve Toplum Bilimleri Fakültesi , Yabancı Diller Bölümü , Meslek Yüksekokulu gibi bir cok fakultemiz bulunmaktadir ilgili fakulte ve bolum icin , yaz okulu ve benzeri bir cok bilgi icin bu linki inceleyebilirsiniz \nhttps://www.istinye.edu.tr/tr"
+          ]
+      },
+      {
+          "intent": "ücretler",
+          "input": [
+              "ücret",
+              "ücretlendirme",
+              "ücretler",
+              "okul ücreti",
+              "okul ucreti ne kadar",
+              "kac para",
+              "okul kac para",
+              "ücret hakkında bilgi",
+              "ücret bilgisi",
+              "bana ücreti söyle",
+              "üniversite ücreti",
+              "dönem başına ücret",
+              "her dönemin ücreti nedir",
+              "her yılın ücreti nedir",
+              "ücret nedir",
+              "ücretler nedir",
+              "ücretler ne kadar",
+              "ilk yıl ücretleri",
+              "ücretler",
+              "ücretler hakkında",
+              "ücretler hakkında bir şey söyle",
+              "Yurt ücreti nedir",
+              "ücretler ne kadar",
+              "yurt ücretleri",
+              "ücretler her yıl artıyor mu?",
+              "öğrencilere sağlanan burs veya indirim olanakları var mı?",
+              "öğrenciler ne zaman ücret ödüyorlar?",
+              "ödemeleri nasıl yapabilirim?",
+              "eğitim ücretleri dışında hangi ek masraflarım olabilir?",
+              "öğrenciler için iş-staj olanakları var mı?",
+              "yabancı öğrenciler için farklı ücret politikaları var mı?",
+              "öğrenciler için taksit seçenekleri var mı?",
+              "ilgili kurumlardan veya şirketlerden sponsorluk veya destek olanakları var mı?",
+              "dönem başına ödeme planları nasıl işliyor?",
+              "para hakkinda",
+              "okul parasi",
+              "yaz okulu ücretleri",
+              "yaz okulu kredi başına ücret"
+          ],
+          "output": [
+              "Ücret detayları için https://aday.istinye.edu.tr/taban-puan-ve-ucretler bu siteyi ziyaret edin. Ücretlendirme bolume ve seneye göre değişiklilik gösterebilir"
+          ]
+      },
+      {
+          "intent": "konum",
+          "input": [
+              "üniversite nerede bulunuyor",
+              "üniversite nerede",
+              "üniversitenin adresi",
+              "üniversiteye nasıl gidilir",
+              "üniversite konumu",
+              "üniversite adresi",
+              "üniversiteye nasıl ulaşabilirim",
+              "üniversitenin adresi nedir",
+              "adres",
+              "konum",
+              "okul",
+              "okul nerede",
+              "okulun adresi",
+              "okula nasıl gidebilirim",
+              "okulun konumu"
+          ],
+          "output": [
+              "Üniversitemize ait konum ve ulaşım bilgilerine https://aday.istinye.edu.tr/iletisim adresinden detaylıca erişebilirsin" 
+          ]
+      },
+      {
+          "intent": "yurt",
+          "input": [
+              "yurt",
+              "yurt imkanı",
+              "y hizmeti",
+              "yurt konumu",
+              "yurt adresi",
+              "yurt olanakları",
+              "yurt ücretleri",
+              "üniversitemiz yurt sağlıyor mu?",
+              "okulumuz yurt sağlıyor mu?",
+              "herhangi bir yurt var mı?",
+              "yurt nerede?",
+              "sizin yurdunuz var mı?",
+              "sizde yurt var mı?",
+              "yurt kapasitesi",
+              "yurt kaç kişilik",
+              "kız yurdu",
+              "erkek yurdu",
+              "yurt ücreti nedir?",
+              "yurda nasıl girilir?",
+              "yurt adresi nedir?",
+              "yurt okuldan ne kadar uzaklıkta?",
+              "yurt okula yakın mı?",
+              "yurt üniverstiden ne kadar uzaklıkta?",
+              "yurt-okul mesafesi",
+              "yurda nasıl giderim",
+              "yurt nerede?",
+              "yurt ne kadar büyük?",
+              "okul ile yurt arasındaki mesafe",
+              "Yyurt ile okul arasındaki mesafe"
+          ],
+          "output": [
+              "Yurt hizmetleri için detayları bilgilere https://sks.istinye.edu.tr/tr/yurtlar adresinden ulaşabilirsiniz."
+          ]
+      },
+      {
+          "intent": "etkinlikler",
+          "input": [
+              "organize edilen etkinlikler",
+              "etkinlik listesi",
+              "üniversitede düzenlenen etkinlikler listesi",
+              "üniversitede yapılan etkinlikler listesi",
+              "üniversitede hangi etkinlikler düzenleniyor?",
+              "üniversitede herhangi bir etkinlik var mı?",
+              "okulda düzenlenen etkinlikler listesi",
+              "okulda yapılan etkinlikler listesi",
+              "okulda hangi etkinlikler düzenleniyor?",
+              "okulda herhangi bir etkinlik var mı?",
+              "etkinlikler?",
+              "hangi etkinlikler var",
+              "etkinlikler hakkında bana bilgi ver",
+              "etkinlikler nasıl bilgi verir misin?"
+          ],
+          "output": [
+              "Etkinlik detayları için https://sks.istinye.edu.tr/tr/spor/etkinlikler sitesini inceleyebilirsiniz"
+          ]
+      },
+      {
+          "intent": "formlar",
+          "input": [
+              "getirilmesi gereken formlar",
+              "kabul için gereken formlar",
+              "kabul zamanında gereken belgeler",
+              "kabul sırasında gereken belgeler",
+              "kabul için gerekli belgeler",
+              "kabul zamanında gerekli belgeler",
+              "kabul sırasında gerekli belgeler",
+              "kabul için hangi belgeler gereklidir",
+              "kabul için hangi belgeyi getirmeliyim",
+              "okulumuza ait formlar",
+              "okulumuza ait dilekçelere nasıl ulaşabilirim",
+              "üniversitemize ait formlar",
+              "üniversitemize ait dilekçelere nasıl ulaşabilirim",
+              "hangi belgelere ihtiyacım var",
+              "dilekçe",
+              "belge",
+              "şikayet",
+              "kabul için hangi belgelere ihtiyacım var",
+              "gereken belgeler",
+              "staj belgeleri",
+              "itiraz dilekçeleri",
+              "dilekçe"
+          ],
+          "output": [
+              "Gerekli belge ve formlara https://www.istinye.edu.tr/tr/ogrenci-isleri/formlar sitesinden ulaşabilirsiniz."
+          ]
+      },
+      {
+          "intent": "kampüs",
+          "input": [
+              "kampüsler hakkında bilgi",
+              "kampüs",
+              "kampüsler nerede?",
+              "kampüse nasıl giderim?",
+              "kaç kampüs var",
+              "vadi kampüsü imkanları",
+              "topkapı kampüsü imkanları"
+          ],
+          "output": [
+              "Kampüs detaylarımıza https://www.istinye.edu.tr/tr/kampuslerimiz adresinden ulaşabilirsiniz."
+          ]
+      },
+      {
+          "intent": "müfredat",
+          "input": [
+              "mühendislik fakültesi için müfredat",
+              "mühendislik müfredatı nedir",
+              "dersim ne zaman",
+              "ders saat kaçta",
+              "müfredat",
+              "ders programı",
+              "bilgisayar mühendisliği müfredatı nedir",
+              "müfredat",
+              "zaman çizelgesi",
+              "ders bilgisi",
+              "müfredata nasıl erişebilirim",
+              "müfredat bilgisi"
+          ],
+          "output": [
+              "Zaman çizelgesi öğrencilere doğrudan sağlanır ya da müfredat hakkında bilgi almak için öğrenci bilgi sisteminden ders programına bakabilirsiniz."
+          ]
+      },
+      {
+          "intent": "kütüphane",
+          "input": [
+              "herhangi bir kütüphane var mı",
+              "kütüphane imkanı",
+              "kütüphane olanakları",
+              "kütüphane var mı",
+              "üniversitenin kütüphane imkanı var mı",
+              "üniversite kütüphanesi",
+              "kitapları nereden alabilirim",
+              "kitap imkanı",
+              "kütüphanede ne tür kitaplar var",
+              "kütüphanede ücretli mi?",
+              "çalışma odası var mı",
+              "çalışma odaları nerede",
+              "kütüphane nerede",
+              "kütüphaneye nasıl gidebilirim",
+              "kütüphane",
+              "kütüphane bilgisi",
+              "kütüphane kitapları bilgisi",
+              "kütüphaneye üye olmak için ne yapmalıyım",
+              "kütüphane hakkında bilgi ver",
+              "kaç tane kütüphane"
+          ],
+          "output": [
+              "Kütüphanemiz hakkında tüm bilgiler için https://kutuphane.istinye.edu.tr/ adresini ziyaret edebilirsiniz."
+          ]
+      },
+      {
+      "intent": "kantin",
+          "input": [
+              "yemek olanakları",
+              "kantin olanakları",
+              "kantin olanakları",
+              "kantine nasıl gidebilirim",
+              "kantin nerede?",
+              "kafeterya nerede?",
+              "kafeteryaya nasıl gidebilirim?",
+              "herhangi bir kantin var mı",
+              "Üniversitede kafeterya var mı",
+              "Üniversitenin bir kantini var mı",
+              "kantin nerede",
+              "kafeterya nerede",
+              "kantin",
+              "yiyecek",
+              "kafeterya"
+      ],
+          "output": [
+              "Kampüslerimiz içinde çeşitli yiyecek ve içeceklerin bulunduğu kantin ve kafeteryalar bulunmaktadır."
+      ]
+      },
+      {
+          "intent": "yemekhane",
+          "input": [
+              "yemekhane",
+              "yemek saatleri Tablosu",
+              "yemek tablosu nedir",
+              "yemek fiyatları",
+              "yemek kaçta veriliyor",
+              "yemek ücretleri",
+              "yemekhane nerede?",
+              "ne yemek var",
+              "bugün ne yemeliyim",
+              "yemekhane temiz mi?",
+              "yemekhane var mı",
+              "yemek menüsü",
+              "kantindeki yiyecekler",
+              "menüde ne var",
+              "üniversite kantininde neler var",
+              "üniversite kantininde hangi yiyecekleri alabiliriz",
+              "yiyecek çeşitliliği",
+              "ne yemek var?",
+              "yemekhaneye nasıl gidebilirim"
+          ],
+          "output": [
+              "Okulumuz içerisinde yemekhane mevcuttur. Detaylı bilgi için https://ois.istinye.edu.tr/bilgipaketi/eobsakts/icerik/id/21/menu_id/2_26/ln/tr adresini ziyaret edin."
+          ]
+      },
+      {
+          "intent": "kariyer merkezi - mezun",
+          "input": [
+              "kariyer merkezi",
+              "mezunlar için kariyer desteği",
+              "okulumuzla anlaşmalı şirketler var mı",
+              "iş olanakları",
+              "cv nasıl hazırlanır?",
+              "cv hazırlamak için yardım eder misin",
+              "okulumuzun iş imkanları",
+              "üniversitemiz istihdam sağlıyor mu",
+              "kariyer günleri",
+              "mesleki yardım"
+          ],
+          "output": [
+              "Öğrenci ve mezunlarımızın ihtiyaçları için bir kariyer merkezimiz bulunmaktadır. Daha detaylı bilgi için https://kariyermerkezi.istinye.edu.tr/tr/hakkimizda adresini ziyaret edin."
+          ]
+      },
+      {
+          "intent": "kariyer merkezi - staj",
+          "input": [
+              "staj",
+              "staj yeri bulamadım",
+              "staj yeri nasıl bulunur",
+              "okul staj bulmama yardım eder mi",
+              "okulun anlaşmalı olduğu staj yerleri",
+              "staj nasıl bulunur?",
+              "okulda staj yapılır mı?",
+              "staj yapmak için ne yapmalıyım?"
+          ],
+          "output": [
+              "Zorunlu staj yapacak olan öğrencimiz, detaylı bilgi için ilgili bölüm başkanlarından ve bölümdeki hocalarından konuşmalılardır."
+          ]
+      },
+      {
+          "intent": "bölüm başkanı",
+          "input": [
+              "bölüm başkanı kimdir",
+              "bölüm başkanının adı",
+              "bölüm başkanı nerededir",
+              "bölüm başkanıyla nasıl görüşürüm",
+              "bölüm başkanı iletişim"
+          ],
+          "output": [
+              "Her bölüm için ayrı bir bölüm başkanı vardır. Lütfen daha fazla detay verin. (Örneğin: Yazılım Mühendisliği Bölüm Başkanı)"
+          ]
+      },
+      {
+          "intent": "yazılım müh bölüm başkanı",
+          "input": [
+              "yazılım mühendisliği bölüm başkanı",
+              "yazılım mühendisliği bölüm başkanı kimdir",
+              "yazılım mühendisliği bölüm başkanı nerededir",
+              "yazılım mühendisliği bölüm başkanıyla nasıl görüşürüm",
+              "yazılım mühendisliği bölüm başkanı iletişim"
+          ],
+          "output": [
+              "Yazılım Mühendisliği Bölüm Başkanı Sayın Dr. Muhammed DAVUD'dur. "
+          ]
+      },
+      {
+          "intent": "dekan",
+          "input": [
+              "dekan kimdir",
+              "dekan nerededir",
+              "dekanla nasıl görüşürüm",
+              "dekan iletişim"
+          ],
+          "output": [
+              "Mühendislik Fakültesi Dekanı Sayın Prof.Dr. Mehmet Alper TUNGA'dır. Kendisi ile iletişime geçmek isterseniz lütfen okuldaki sekreterlikten detaylı bilgi alın."
+          ]
+      },
+      {
+          "intent": "rektör",
+          "input": [
+              "rektör kimdir",
+              "rektör nerededir",
+              "rektörle nasıl görüşürüm",
+              "rektör iletişim"
+          ],
+          "output": [
+              "Üniversitemizin Rektörü Sayın Prof. Dr. Erkan İBİŞ'dir. Kendisi ile iletişime geçmek isterseniz lütfen okuldaki sekreterlikten detaylı bilgi alın."
+          ]
+      },
+      {
+          "intent": "akademik takvim",
+          "input": [
+              "akademik takvim",
+              "sınav tarihleri",
+              "akdemik takvim detayları",
+              "okul ne zaman açılıyor",
+              "dersler ne zaman bitiyor",
+              "final sınavları ne zaman",
+              "finaller",
+              "vizeler",
+              "sınavlar",
+              "sınav",
+              "sınavlar ne zaman",
+              "vize tarihleri",
+              "sınav programı",
+              "sınav takvimi",
+              "dönem sınavı programı",
+              "dönem",
+              "bahar dönemi",
+              "güz dönemi",
+              "yaz dönemi",
+              "yarıyıl",
+              "ne zaman sınav",
+              "sınav tarihleri",
+              "ne zaman dönem",
+              "dönem ne zaman başlıyor",
+              "dönem ne zaman bitiyor",
+              "akademik takvimine nasıl ulaşabilirim",
+              "akademik takvimi nasıl bulurum"
+          ],
+          "output": [
+              "Akademik Takvime bakarak detaylı bilgilere ulaşabilirsiniz. https://www.istinye.edu.tr/tr/ogrenci-isleri/akademik-takvim"
+          ]
+      },
+      {
+          "intent": "kabul sureci",
+          "input": [
+              "kabul süreci",
+              "kayıt süreci nedir",
+              "kayıt süreci ne",
+              "okul kayıdı",
+              "okulunuza nasıl kayıt olunur",
+              "üniversitenize nasıl kayıt olunur",
+              "kayıt süreci nedir",
+              "okula nasıl kayıt olabilirim",
+              "okulunuza nasıl kayıt olunur",
+              "üniversitenize nasıl kayıt olunur",
+              "kayıt süreci nedir",
+              "kayıt",
+              "kayıt süreci",
+              "kayıt süreci nasil",
+              "kayıt için gerekli belgeler nelerdir",
+              "kayıt sürecinde hangi adımları izlemeliyim",
+              "kayıt tarihleri ne zaman",
+              "kayıt ücreti var mı",
+              "kayıt sırasında hangi bilgileri vermeliyim",
+              "kayıt süreci ne kadar sürer",
+              "kayıt işlemleri online olarak yapılabilir mi"
+          ],
+          "output": [
+              "https://www.istinye.edu.tr/tr/ogrenci-isleri/yeni-ogrenci-kaydi/kayit-islemleri adresinden kayıt işlemleri hakkında detaylı bilgilere ulaşabilirsiniz."
+          ]
+      },
+      {
+          "intent": "burs",
+          "input": [
+              "burs",
+              "burs var mı",
+              "burs mevcut mu",
+              "mühendislik ve doğa bilimleri fakültesi bursu",
+              "iktisadi, idari ve sosyal bilimler fakültesi bursu",
+              "güzel sanatlar, tasarım ve mimarlık fakültesi bursu",
+              "sağlık bilimleri fakültesi bursu",
+              "mekanik mühendisliği bursu",
+              "iletişim fakültesi",
+              "bilgisayar mühendisliği bursu",
+              "mekanik mühendisliği bursu",
+              "inşaat mühendisliği bursu",
+              "kimya mühendisliği bursu",
+              "tıp fakültesi bursu",
+              "mimarlık bursu",
+              "mevcut burslar",
+              "burs listesi",
+              "birinci sene bursu",
+              "ikinci sene bursu",
+              "üçüncü sene bursu",
+              "dördüncü sene bursu",
+              "kimler burs alabilir",
+              "burs alabilir miyim",
+              "burs başvuruları ne zaman açılır",
+              "başarı bursu",
+              "bursum kesildi",
+              "bursum ödenmedi",
+              "bursum eksik ödendi"
+          ],
+          "output": [
+              "https://lisansustu.istinye.edu.tr/tr/basvuru-ve-kabul/burslar-ve-indirimler adresinden burs hakkında detaylı bilgilere ulaşabilirsiniz."
+          ]
+      },
+      {
+          "intent": "imkanlar",
+          "input": [
+              "üniversite hangi imkanları sağlar",
+              "üniversitenin imkanları",
+              "üniversitede hangi imkanlar bulunur",
+              "imkanlar",
+              "sağlanan imkanlar",
+              "üniversitede bilgisayar var mı",
+              "spor salonu var mı",
+              "sağlık departmanı var mı",
+              "revir var mı",
+              "psikolog var mı",
+              "kantin var mı",
+              "yemekhane var mı"
+          ],
+          "output": [
+              "Üniversitemizin son teknolojik laboratuvarlar, internet bağlantısı, akıllı sınıflar, konferans salonu, spor salonu, revir, psikolog, kütüphane yemekhane ve kantin bulunmaktadır."
+          ]
+      },
+      {
+          "intent": "üniversite kapasitesi",
+          "input": [
+              "maksimum öğrenci sayısı",
+              "her bölümdeki sıra sayısı",
+              "her sınıftaki sıra sayısı",
+              "kaç öğrenci var",
+              "maksimum kapasite",
+              "maksimum öğrenci kabulü",
+              "her bölüme kaç öğrenci alınıyor",
+              "sıra sayısı",
+              "sıra",
+              "sınıf sayısı"
+          ],
+          "output": [
+              "Her bölümde, her sınıf için 60 kontenjan bulunmaktadır. Koltuklar farklı bölümler için farklılık gösterebilir."
+          ]
+      },
+      {
+          "intent": "kıyafet",
+          "input": [
+              "kıyafet",
+              "gündelik kıyafetler giyilebilir mi",
+              "Üniversite bir kıyafet var mı",
+              "herhangi bir üniforma var mı",
+              "üniforma",
+              "üniforma hakkında ne dersiniz",
+              "üniforma giymeli miyiz",
+              "kıyafet zorunlulu var mı",
+              "üniversitede ne giyinmeliyim",
+              "üniversitede ne giyilmez",
+              "üniversitede ne giyinmemeliyim",
+              "üniversitede ne giyinmeliyim"
+          ],
+          "output": [
+              "Üniversitemizde kıyafet zorunluluğu yoktur."
+          ]
+      },
+      {
+          "intent": "random",
+          "input": [
+              "seni seviyorum",
+              "beni seviyor musun",
+              "okulun en güzel kızı kim",
+              "şampiyon kim olur",
+              "messi mi ronaldo mu",
+              "kaç yaşındasın",
+              "hangi partilisin",
+              "oyun oynayalım mı"
+          ],
+          "output": [
+              "Ben sadece okulumuzla ilgili soruları cevaplamak için programlandım.Lütfen okulumuzla ilgili sorular sor"
+          ]
+      },
+      {
+          "intent": "küfür",
+          "input": [
+              "siktir git",
+              "sürtük",
+              "çeneni kapa",
+              "aptal",
+              "fuck",
+              "salak",
+              "piç",
+              "manyak",
+              "yavşak",
+              "göt",
+              "şerefsiz",
+              "kahpe"
+          ],
+          "output": [
+              "Lütfen uygunsuz kelimeler kullanmayın!"
+          ]
+      },
+      {
+          "intent": "tatil",
+          "input": [
+              "tatiller",
+              "dönem ne zaman başlayacak",
+              "dönem ne zaman bitecek",
+              "tatiller ne zaman",
+              "okul bitiyor mu",
+              "okul ne zaman bitiyor",
+              "kaç gün tatil",
+              "bugün tatil mi",
+              "tatil listesi",
+              "yarıyıl tatili",
+              "bu yıl tatil",
+              "tatil listesi",
+              "tatiller hakkında",
+              "tatiller hakkında",
+              "tatil ne zaman",
+              "tatiller ne zaman",
+              "tatil ne kadar sürecek",
+              "tatil yok mu",
+              "tatile gideceğim"
+          ],
+          "output": [
+              "Akademik takvime bakarak, dönem boyunca uygulanacak tüm resmi tatiller ve dönem arası tatiller hakkında detaylı bilgilere ulaşabilirsiniz."
+          ]
+      },
+      {
+          "intent": "sporlar",
+          "input": [
+              "spor ve oyunlar",
+              "futbol",
+              "basketbol",
+              "voleybol",
+              "hentbol",
+              "yüzme",
+              "spor imkanları",
+              "üniversitedeki spor salonları",
+              "spor detayları ver",
+              "spor altyapısı",
+              "spor olanakları",
+              "spor hakkında bilgi",
+              "Spor aktiviteleri",
+              "spor etkinlikleri",
+              "lütfen spor ve oyunlar hakkında bilgi ver",
+              "spor salonu",
+              "spor salonu nerede?",
+              "futbol sahası nerede?",
+              "basketbol sahası nerede?",
+              "voleybol sahası nerede?"
+          ],
+          "output": [
+              "Üniversitemiz öğrencilerin çok yönlü gelişimini teşvik eder ve bu nedenle kampüste spor olanakları sunar. Daha fazla bilgi için https://sks.istinye.edu.tr/tr/spor/spor-tesisleri ziyaret edin."
+          ]
+      },
+      {
+          "intent": "okulservisi",
+          "input": [
+              "shuttle",
+              "shuttle var mı?",
+              "shuttle nerede?",
+              "okul servisi",
+              "okul servisi nerede?",
+              "okul servisi var mı?",
+              "okul servisi saatleri?",
+              "okul servisi nereye gidiyor",
+              "servisi nerede?",
+              "servise nereden binebilirim",
+              "servis kaç kişilik",
+              "servis ücresiz mi",
+              "servis evime götürür mü",
+              "servis metrobüse gidiyor mu",
+              "servis metroya gidiyor mu"
+          ],
+          "output": [
+              "Okul servisi için detaylı bilgi edinmek için https://www.istinye.edu.tr/tr/iletisim/servis-saatleri adresini ziyaret edin."
+          ]
+      },
+      {
+          "intent": "5n1k",
+          "input": [
+              "nerede",
+              "nerede?",
+              "kim",
+              "kim?",
+              "nasıl",
+              "nasıl?",
+              "ne",
+              "ne?",
+              "ne zaman",
+              "ne zaman?",
+              "ne kadar",
+              "neden?",
+              "neden",
+              "nereden",
+              "nereden?",
+              "hangi koşullarda",
+              "nasıl bir yol izlemeliyim?",
+              "hangi yöntemleri kullanmalıyım?",
+              "bu durumda ne yapmalıyım?",
+              "şu anda ne oluyor?"
+        ],
+          "output": [
+              "Tam olarak anlayamadım. Lütfen sorunuzu detaylandırın."
+          ]
+      }
+
+
+  ]
+}
